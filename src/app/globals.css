@@ -1,0 +1,67 @@
+@import "tailwindcss";
+
+:root {
+  --bg: #f3f2ef;
+  --surface: #ffffff;
+  --surface-2: #ecebe7;
+  --ink: #0e0e0e;
+  --ink-2: #55545a;
+  --ink-3: #6b6a70;
+  --line: #e3e2de;
+  --line-strong: #b9b8b4;
+  --brand: #6252c1;
+  --brand-ink: #ffffff;
+  --brand-soft: #e7e3fa;
+  --brand-softer: #f2f0fc;
+  --lime: #e9f27a;
+  --ok: #1f8f5c;
+  --ok-soft: #dcf2e6;
+  --warn: #a86400;
+  --warn-soft: #fbedd5;
+  --bad: #b13535;
+  --bad-soft: #fbe3e3;
+}
+
+@theme inline {
+  --color-bg: var(--bg);
+  --color-surface: var(--surface);
+  --color-surface-2: var(--surface-2);
+  --color-ink: var(--ink);
+  --color-ink-2: var(--ink-2);
+  --color-ink-3: var(--ink-3);
+  --color-line: var(--line);
+  --color-line-strong: var(--line-strong);
+  --color-brand: var(--brand);
+  --color-brand-ink: var(--brand-ink);
+  --color-brand-soft: var(--brand-soft);
+  --color-brand-softer: var(--brand-softer);
+  --color-lime: var(--lime);
+  --color-ok: var(--ok);
+  --color-ok-soft: var(--ok-soft);
+  --color-warn: var(--warn);
+  --color-warn-soft: var(--warn-soft);
+  --color-bad: var(--bad);
+  --color-bad-soft: var(--bad-soft);
+  --font-sans: var(--font-inter);
+  --font-display: var(--font-inter-tight);
+}
+
+html,
+body {
+  background: var(--bg);
+  color: var(--ink);
+}
+
+body {
+  font-family: var(--font-inter), system-ui, sans-serif;
+  font-feature-settings: "cv11", "ss01";
+}
+
+::selection {
+  background: var(--brand-soft);
+}
+
+:focus-visible {
+  outline: 2px solid var(--brand);
+  outline-offset: 2px;
+}
